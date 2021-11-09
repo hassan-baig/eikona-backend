@@ -12,11 +12,11 @@ app.post("/", async (req, res) => {
   const { error } = validateNew.validate(req.body);
   if (error) return res.status(422).send({ msg: error.details[0].message });
 
-  const user = await User.findOne({ walletId: walletId });
+  const user = await User.findOne({ geoFigId: geoFigId });
 
   await User.updateOne(
     {
-      walletId: walletId,
+      geoFigId: geoFigId,
     },
     {
       walletId: walletId,
@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
   pageSize = pageSize || 10;
   page = page || 0;
 
-  const users = await User.find()
+  const users = await User.find();
 
   return res.status(200).send({ users: users });
 });
