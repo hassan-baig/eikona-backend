@@ -1,0 +1,35 @@
+{
+  "name": "eikona-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassan-baig/eikona-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassan-baig/eikona-backend/issues"
+  },
+  "homepage": "https://github.com/hassan-baig/eikona-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "eslint": "^8.1.0"
+  }
+}
